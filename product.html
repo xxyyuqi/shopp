@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MARÉ 商品详情" />
+    <title>商品详情 · MARÉ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.cn" />
+    <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/shop.css" />
+  </head>
+  <body>
+    <div data-site-header></div>
+
+    <main>
+      <section class="container crumbs">
+        <ol data-crumbs></ol>
+      </section>
+
+      <section class="product-page" data-product-page>
+        <div class="container">
+          <div class="pd-layout" data-pd-root></div>
+        </div>
+      </section>
+
+      <section class="related-section" data-related style="display:none;">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title">
+              <span class="h-rule" aria-hidden="true"></span>
+              <h2 class="h1">
+                <span class="eyebrow" style="display:block; margin-bottom: 12px;">You May Also Like</span>
+                配它的<em style="font-style: italic; color: var(--c-deep-marine);">海风</em>。
+              </h2>
+            </div>
+          </div>
+          <div class="product-grid" data-related-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="/scripts/products.js"></script>
+    <script src="/scripts/common.js"></script>
+    <script src="/scripts/product.js"></script>
+  </body>
+</html>

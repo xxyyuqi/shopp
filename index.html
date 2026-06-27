@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MARÉ · 把整个夏天的阳光，叠进你的衣柜。地中海风格服装精品店。"
+    />
+    <title>MARÉ · 地中海阳光精品店</title>
+    <link rel="preconnect" href="https://fonts.googleapis.cn" />
+    <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+  </head>
+  <body>
+    <div data-site-header></div>
+
+    <main>
+      <!-- ============== HERO ============== -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <span class="eyebrow hero-eyebrow fade-up">Édition Été 2024 · 夏日新刊</span>
+              <h1 class="hero-title fade-up d1">
+                把整个<span class="it">夏天的阳光</span>，<br />
+                叠进你的<span class="mark">衣柜</span>里。
+              </h1>
+              <p class="hero-desc fade-up d2">
+                来自地中海海岸的精选时装。亚麻、桑蚕丝、植鞣牛皮——
+                让每一件单品，都像一封从海边寄来的信。
+              </p>
+              <div class="hero-actions fade-up d3">
+                <a href="#shop" class="btn btn-primary">现在选购 →</a>
+                <a href="#journal" class="btn btn-secondary">阅读杂志</a>
+              </div>
+              <div class="hero-meta fade-up d4">
+                <div class="meta-item">
+                  <div class="meta-num">12</div>
+                  <div class="meta-label">本季单品</div>
+                </div>
+                <div class="meta-item">
+                  <div class="meta-num">07</div>
+                  <div class="meta-label">合作工坊</div>
+                </div>
+                <div class="meta-item">
+                  <div class="meta-num">100%</div>
+                  <div class="meta-label">天然面料</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual fade-up d2">
+              <div class="hv-blue" aria-hidden="true"></div>
+              <div class="hv-yellow" aria-hidden="true"></div>
+              <div class="hv-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1100&q=85"
+                  alt="日落黄真丝长裙"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="hv-tag">
+                <div class="tag-eyebrow">Featured · 本季封面</div>
+                <div class="tag-name">Sienna 真丝半身长裙</div>
+                <div class="tag-price">¥ 1,280</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Marquee ============== -->
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span class="marquee-item">Free Shipping Above ¥599</span>
+          <span class="marquee-item">天然亚麻 · 日本牛仔 · 意大利真丝</span>
+          <span class="marquee-item">30 Days Free Return</span>
+          <span class="marquee-item">From the Mediterranean Coast</span>
+          <span class="marquee-item">Édition Été 2024</span>
+          <span class="marquee-item">Free Shipping Above ¥599</span>
+          <span class="marquee-item">天然亚麻 · 日本牛仔 · 意大利真丝</span>
+          <span class="marquee-item">30 Days Free Return</span>
+          <span class="marquee-item">From the Mediterranean Coast</span>
+          <span class="marquee-item">Édition Été 2024</span>
+        </div>
+      </section>
+
+      <!-- ============== Categories ============== -->
+      <section class="categories" id="shop">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title">
+              <span class="h-rule" aria-hidden="true"></span>
+              <h2 class="h1">
+                <span class="eyebrow" style="display:block; margin-bottom: 12px;">Categories · 分类浏览</span>
+                选择一片<em style="font-style: italic; color: var(--c-deep-marine);">海岸</em>。
+              </h2>
+            </div>
+          </div>
+
+          <div class="cat-grid" data-cat-grid></div>
+        </div>
+      </section>
+
+      <!-- ============== Shop Grid ============== -->
+      <section class="shop-section">
+        <div class="container">
+          <div class="shop-toolbar">
+            <div class="toolbar-count">
+              展示 <strong data-result-count>0</strong> 件单品
+              <span data-result-tag style="display:none; margin-left:8px;"></span>
+            </div>
+            <div class="toolbar-sort">
+              <span>排序</span>
+              <select data-sort>
+                <option value="default">编辑推荐</option>
+                <option value="price-asc">价格 低到高</option>
+                <option value="price-desc">价格 高到低</option>
+                <option value="new">最新上架</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="product-grid" data-product-grid></div>
+
+          <div class="empty" data-empty style="display:none;">
+            <div class="empty-title">"这里像清晨的海，空空荡荡。"</div>
+            <p>没有找到匹配的单品，换个关键词试试。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Hot ============== -->
+      <section class="hot-section">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title">
+              <span class="h-rule" aria-hidden="true"></span>
+              <h2 class="h1">
+                <span class="eyebrow" style="display:block; margin-bottom: 12px;">Hot Picks · 热门推荐</span>
+                这个夏天，<em style="font-style: italic; color: var(--c-deep-marine);">大家都在挑的</em>。
+              </h2>
+            </div>
+            <a href="#shop" class="btn-ghost">查看全部 →</a>
+          </div>
+
+          <div class="hot-layout">
+            <a class="hot-feature" data-hot-feature href="#">
+              <span class="hf-label">Editor's Pick</span>
+              <img alt="编辑精选" />
+            </a>
+            <div class="hot-list" data-hot-list></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Journal ============== -->
+      <section class="journal-section" id="journal">
+        <div class="container">
+          <div class="journal-card">
+            <div>
+              <span class="eyebrow jc-eyebrow">Journal · 037</span>
+              <h2 class="jc-title">
+                亚麻是一种<em>慢</em>，<br />
+                是被太阳<em>晒透</em>的耐心。
+              </h2>
+              <p class="jc-desc">
+                我们走访葡萄牙北部的纺织小镇 Guimarães，
+                看那里的女工如何用近百年前的织机，
+                把一束亚麻草纤维织成会呼吸的衣服。
+                这一期，我们讲一个关于"慢"的故事——
+                以及为什么真正好的衣服值得多等几天。
+              </p>
+              <a href="javascript:void(0)" class="btn btn-secondary jc-btn">阅读全文 →</a>
+            </div>
+            <div class="jc-media">
+              <img
+                src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=900&q=85"
+                alt="亚麻工坊"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== Newsletter ============== -->
+      <section class="newsletter" id="about">
+        <div class="container">
+          <div class="newsletter-card">
+            <span class="eyebrow" style="margin-bottom: 20px; display: inline-flex;">订阅 · Le Bulletin</span>
+            <h2 class="h1">每周一封，<br />来自海岸的来信。</h2>
+            <p class="lede">
+              新品发布、设计师手记、面料知识，
+              以及订阅者专属的早鸟价。无垃圾邮件，承诺只发好的内容。
+            </p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); MARE.showToast('订阅成功 · 我们将很快与你联系');">
+              <input type="email" placeholder="your@email.com" required />
+              <button type="submit">
+                订阅
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+
+    <script src="/scripts/products.js"></script>
+    <script src="/scripts/common.js"></script>
+    <script src="/scripts/home.js"></script>
+  </body>
+</html>
